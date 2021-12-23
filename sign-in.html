@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>Netflix</title>
+        <link rel="stylesheet" href="css/nf.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body style="background-color: black;">
+        <header>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <img class="logo" src="img/logo.png" alt="logo">
+                </div>
+              </div>
+          </div>
+          <div class="container d-grid w-sm-100">
+            <!-- <h3 style="color: white;">Sign In</h3> -->
+          <div class="row">
+              <div class="col-md-8 mx-auto">
+                  <div class="header-hero">
+                    <h3 style="color: white; font-weight: bold;" class="mb-5">Sign In</h3>
+                      <div class="form-group">
+                          <!-- <h3 style="color: white;">Sign In</h3> -->
+                      <form action="" class="text-center" id="form">
+                        <label for="text" class="Username d-flex">Username</label>
+                         <input type="text" class="form-control mb-3 text-center" id="Username" required>
+                         <div class="invalid-feedback" id="error">Please fill out the field</div>
+                         <label for="password" class="PassV d-flex">Password</label>
+                         <input type="password" class="form-control mb-4 text-center" id="password" required>
+                         <div class="invalid-feedback" id="error">Please fill out the field</div>
+                         
+                         <button class="form-control mb-2" style="background-color: red; color: white;" type="submit">Sign in</button>
+                         <div class="check d-flex justify-content-between mb-4" >
+                        <div class="Check-input">
+                         <input type="checkbox" name="check" id="check" class="mr-1"><label for="check">Remember Me</label></div>
+                         <label><a href="#" style="color: #b3b3b3;">Need help?</a></label>
+                        
+                        </div>
+                        <div class="fb-login d-flex mb-3">
+                          <a href="#" style="color:#b3b3b3"><img src="../Sign-in/img/fb-logo.png" alt="Fb" class="mx-1">Login with Facebook</a>
+                        </div>
+                        <div class="New d-flex">
+                           <label>New to Netflix?</label><a href="../netflix.html" style="color: white;">Sign Up Now</a>
+                        </div>
+            
+                        <div class="captcha d-flex align-items-left">
+                            <span style="color: #b3b3b3; text-align: left;">This Page is Protected by Google ReCAPTCHA to ensure you're not a bot.
+                                <a  style="color: turquoise;" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >Learn More</a></span> 
+                        </div>
+                        <div class="collapse" id="collapseOne" aria-labelledby="collapseOne" style="color: #b3b3b3;">
+                          <label class="d-flex">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</label>
+                      </div>
+                        
+
+                      </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        </div>
+        </header>
+        <footer class="my-5 py-5" style="background-color: rgba(0, 0, 0, 0.75);">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p>Questions? Call 0850-390-7444</p>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <ul class="nav flex-column">
+                      <li>FAQ</li>
+                      <li>Investor Relations</li>
+                      <li>Terms of Use</li>
+                      <li>Contact Us</li>
+                    </ul>
+                  </div>
+      
+                  <div class="col-6 col-md-3">
+                    <ul class="nav flex-column">
+                      <li>FAQ</li>
+                      <li>Investor Relations</li>
+                      <li>Terms of Use</li>
+                      <li>Contact Us</li>
+                    </ul>
+                  </div>
+      
+                  <div class="col-6 col-md-3">
+                    <ul class="nav flex-column">
+                      <li>FAQ</li>
+                      <li>Investor Relations</li>
+                      <li>Terms of Use</li>
+                      <li>Contact Us</li>
+                    </ul>
+                  </div>
+      
+                  <div class="col-6 col-md-3">
+                    <ul class="nav flex-column">
+                      <li>FAQ</li>
+                      <li>Investor Relations</li>
+                      <li>Terms of Use</li>
+                      <li>Contact Us</li>
+                    </ul>
+      
+                  </div>
+                  <div class="col-md-12">
+                    <div class="dropdown mt-4">
+                      <button class="btn btn-dark dropdown-toggle py-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <i class="fa fa-globe"></i> Language
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Tamil</a>
+                        <a class="dropdown-item" href="#">English</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <p class="copyright mt-3">Netflix India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        
+    </body>
+    <script>
+         var my_func=function(event){
+           event.preventDefault();
+          if(checkInputs()){
+            window.location.href="http://127.0.0.1:5500/Home-page/home.html"
+          }
+         };
+         var form = document.getElementById("form");
+         form.addEventListener("submit", my_func, true);
+         function checkInputs(){
+           const UserValue=document.getElementById('Username').value.trim();
+           const passValue=document.getElementById('password').value.trim();
+           if(UserValue.length < 3){
+             alert("Name or Email is not Valid");
+             return false;
+           }
+           else if(!validate(UserValue)){
+              alert("Not a Proper Username");
+              return false;
+             
+         }
+         return true;
+         
+        }
+         function isEmail(email){
+             return /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(email);
+
+         }
+         function validate(username) {
+            return /^(?=.{4})[a-z][a-z\d]*_?[a-z\d]+$/i.test(username);
+        }
+         
+    </script>
+    <!-- <script src="../Netflix/Sign-in/js/nfs.js"></script> -->
+        <!-- <script src="js/bootstrap.min.js"></script> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+        <!-- <script src="js/bootstrap.min.js"></script> -->
+</html>
