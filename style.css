@@ -1,0 +1,120 @@
+/* *{ */
+    /* padding: 0%; */
+    /* margin: 0%; */
+    /* border: 0; */
+/* } */
+body{
+    box-sizing: border-box;
+}
+.navbar img{
+    height: 57px;
+    width: 144px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #333333; */
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition:all 0.5s;
+}
+.nav_black{
+    background-color: #111;
+}
+.navbar .Sub{
+    padding-top: 20px;
+    padding-right: 10px;
+    color: white;
+    font-weight: 18px;
+}
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+}
+.container-fluid{
+    margin: 0%;
+    padding: 0;
+}
+section #header{
+    background-color: #333333;
+    color: white;}
+section #header p{
+    font-family: sans-serif;
+    font-size: 0.5rem;
+    text-align: center;
+}
+section #header h3{
+    text-align: center;
+    font: 2em sans-serif;
+}
+.jumbo-image{
+    background: url("../img/R.jfif") no-repeat fixed;
+}
+.jumbotron{
+    height: 50vh;
+    background-size: cover;
+}
+section #devs{
+    background-color: #333333;
+    color: white;
+    margin: 0;
+}
+.row img{
+    border: none;
+    max-width: 100%;
+}
+.device-box{
+    padding: 2%;
+    text-align: center;
+    color: #fff;
+}
+.heading .bottom-line{
+    height: 1px;
+    width:70%;
+    display: inline-block;
+    position: absolute;
+    background: #575757;
+    bottom: 0px;
+    left:0px;
+    z-index: -1;
+}
+.footer{
+    background-color: #333333;
+    /* font-family: sans-serif; */
+    color: white;
+    text-align: center;
+}
+.table{
+    text-align: center;
+}
+.table img{
+    min-width: 60px;
+    height: 90px;
+}
+.table td{
+    color: white;
+}
+.form-group input{
+    margin-bottom: 8px;
+}
+footer .copyright{
+    background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media screen and (max-width:425px){
+    .list-group-horizontal{
+        flex-direction: column; !important
+    }
+    .Sub{
+        display: none;
+    }
+    
+}
+@media  (max-width:768px) {
+    html{
+        width: fit-content;
+    }
+}
